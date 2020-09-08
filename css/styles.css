@@ -871,3 +871,12 @@ address {
   left: 0;
   top: -20px;
 }
+
+.policy-link {
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+
+.user-policy {
+  margin-bottom: 30px;
+}
