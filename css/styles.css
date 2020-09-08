@@ -840,6 +840,10 @@ address {
   border-radius: 4px;
   padding: 12px 42px;
 }
+.form-field:hover .form-input,
+.form-field:focus .form-input {
+  border-color: var(--accent-color);
+}
 
 .form-comment {
   width: 100%;
@@ -856,6 +860,10 @@ address {
   margin-bottom: 28px;
 }
 
+.form-field:hover .form-svg,
+.form-field:focus .form-svg {
+  fill: var(--accent-color);
+}
 .form-svg {
   position: absolute;
   display: block;
