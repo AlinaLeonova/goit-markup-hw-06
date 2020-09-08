@@ -371,7 +371,7 @@
             </div>
             <button type="submit" class="subscribe-btn button-text">
               Подписаться
-              <svg class="form-svg"><use href="./images/sprite.svg#icon-icon-send"></use></svg>
+              <svg class="subscribe-svg"><use href="./images/sprite.svg#icon-icon-send"></use></svg>
             </button>
           </form>
         </div>
@@ -381,36 +381,36 @@
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>X</button>
         <p>Оставьте свои данные, мы вам перезвоним</p>
-        <form action="#">
+        <form action="#" class="modal-form">
           <div>
-            <input type="text" />
-            <label for=""></label>
+            <input type="text" id="user-name" class="form-input" />
+            <label for="user-name">Имя</label>
             <svg class="form-svg">
-              <use href="./images/sprite.svg#icon-icon-send"></use>
+              <use href="./images/sprite.svg#icon-name"></use>
             </svg>
           </div>
 
           <div>
-            <input type="tel" />
-            <label for=""></label>
+            <input type="tel" id="user-tel" class="form-input" />
+            <label for="user-tel">Телефон</label>
             <svg class="form-svg">
-              <use href="./images/sprite.svg#icon-icon-send"></use>
+              <use href="./images/sprite.svg#icon-mail"></use>
             </svg>
           </div>
 
           <div>
-            <input type="email" />
-            <label for=""></label>
+            <input type="email" id="user-mail" class="form-input" />
+            <label for="user-mail">Почта</label>
             <svg class="form-svg">
-              <use href="./images/sprite.svg#icon-icon-send"></use>
+              <use href="./images/sprite.svg#icon-tel"></use>
             </svg>
           </div>
-
-          <textarea name="" id=""></textarea>
-          <label for=""></label>
+          <label for="user-comment">Комментарий</label>
+          <textarea name="" id="user-comment" class="form-comment"></textarea>
 
           <button></button>
           Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+          <button type="submit" class="modal-btn">Отправить</button>
         </form>
       </div>
     </div>
