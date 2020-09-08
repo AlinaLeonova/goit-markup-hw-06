@@ -367,7 +367,7 @@
           <form action="#" class="submit-form">
             <div class="subscribe-form">
               <input type="text" class="subscribe-input" id="subscribe-input" />
-              <label for="subscribe-input" class="subscribe-label">E-mail</label>
+              <!-- <label for="subscribe-input" class="subscribe-label">E-mail</label> -->
             </div>
             <button type="submit" class="subscribe-btn button-text">
               Подписаться
@@ -380,32 +380,32 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>X</button>
-        <p>Оставьте свои данные, мы вам перезвоним</p>
+        <p class="form-text">Оставьте свои данные, мы вам перезвоним</p>
         <form action="#" class="modal-form">
-          <div>
+          <div class="form-field">
             <input type="text" id="user-name" class="form-input" />
-            <label for="user-name">Имя</label>
+            <label for="user-name" class="input-label">Имя</label>
             <svg class="form-svg">
               <use href="./images/sprite.svg#icon-name"></use>
             </svg>
           </div>
 
-          <div>
+          <div class="form-field">
             <input type="tel" id="user-tel" class="form-input" />
-            <label for="user-tel">Телефон</label>
+            <label for="user-tel" class="input-label">Телефон</label>
             <svg class="form-svg">
               <use href="./images/sprite.svg#icon-mail"></use>
             </svg>
           </div>
 
-          <div>
+          <div class="form-field">
             <input type="email" id="user-mail" class="form-input" />
-            <label for="user-mail">Почта</label>
+            <label for="user-mail" class="input-label">Почта</label>
             <svg class="form-svg">
               <use href="./images/sprite.svg#icon-tel"></use>
             </svg>
           </div>
-          <label for="user-comment">Комментарий</label>
+          <label for="user-comment" class="">Комментарий</label>
           <textarea name="" id="user-comment" class="form-comment"></textarea>
 
           <button></button>
