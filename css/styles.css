@@ -923,6 +923,7 @@ address {
 .input-label {
   left: 0;
   top: -23px;
+  margin-bottom: 4px;
 }
 
 .user-comment {
