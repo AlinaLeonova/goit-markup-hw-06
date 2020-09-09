@@ -623,7 +623,13 @@ address {
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: var(--background-color);
   border-radius: 4px;
+  padding: 15px 26px;
+  color: var(--primary-white-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
 }
+
 .subscribe-label {
   position: absolute;
   font-weight: 400;
@@ -637,7 +643,7 @@ address {
 }
 
 .subscribe-btn {
-  width: 200px;
+  min-width: 200px;
   height: 50px;
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -647,8 +653,8 @@ address {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  letter-spacing: 0.09em;
-  padding: 10px 28px;
+  letter-spacing: 0.06em;
+  padding: 10px 29px;
 }
 
 .subscribe-svg {
@@ -802,9 +808,20 @@ address {
   transition: 1000ms;
 }
 
-.modal .modal-btn {
+.submit-btn {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: var(--accent-color);
   color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  padding: 10px 32px;
+  border: 1px solid transparent;
+  min-width: 200px;
+  height: 50px;
+  margin: 0 auto;
 }
 
 .close-btn {
@@ -869,6 +886,11 @@ address {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 12px 16px;
+  /* font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5); */
 }
 
 .form-field {
