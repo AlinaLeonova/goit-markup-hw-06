@@ -908,6 +908,7 @@ address {
   top: 50%;
   transform: translateY(-50%);
   left: 15px;
+  pointer-events: none;
 }
 
 .form-field:hover .form-svg {
