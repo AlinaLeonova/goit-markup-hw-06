@@ -630,6 +630,10 @@ address {
   line-height: 1.25;
 }
 
+.subscribe-input:focus {
+  outline: none;
+}
+
 .subscribe-label {
   position: absolute;
   font-weight: 400;
@@ -655,12 +659,14 @@ address {
   line-height: 1.87;
   letter-spacing: 0.06em;
   padding: 10px 29px;
+  display: flex;
 }
 
 .subscribe-svg {
   width: 24px;
   height: 24px;
   fill: var(--primary-white-color);
+  margin-left: 10px;
 }
 /* ----- FOOTER END ----- */
 
