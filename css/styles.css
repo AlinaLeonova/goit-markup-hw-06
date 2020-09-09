@@ -894,6 +894,11 @@ address {
   padding: 12px 16px;
 }
 
+.form-comment:hover,
+.form-comment:focus {
+  border-color: var(--accent-color);
+}
+
 .form-field {
   position: relative;
   margin-bottom: 28px;
@@ -910,11 +915,8 @@ address {
   pointer-events: none;
 }
 
-.form-field:hover .form-svg {
-  fill: var(--accent-color);
-}
-
-.form-input:focus .form-svg {
+.form-input:focus + .form-svg,
+.form-input:hover + .form-svg {
   fill: var(--accent-color);
 }
 
