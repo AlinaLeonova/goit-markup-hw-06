@@ -776,11 +776,13 @@ address {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  /* transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .is-hidden .modal {
   transform: translatex(-50%) scale(0.1);
 }
+
 .modal {
   min-width: 528px;
   min-height: 581px;
@@ -843,6 +845,11 @@ address {
   transition: color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.form-input:focus,
+.form-comment:focus {
+  outline: none;
+}
+
 .form-field:hover .form-input,
 .form-field:focus .form-input {
   border-color: var(--accent-color);
@@ -897,6 +904,11 @@ address {
 }
 
 .user-policy::before {
+  display: block;
+  content: "";
+  width: 16px;
+  height: 15px;
   background-image: url(../images/check.svg);
   background-position: center;
+  border-color: #212121;
 }
