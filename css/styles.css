@@ -884,14 +884,15 @@ address {
   width: 15px;
   height: 13px;
   fill: #212121;
-  top: 13px;
+  top: 50%;
+  transform: translateY(-50%);
   left: 15px;
 }
 
 .input-label {
   position: absolute;
   left: 0;
-  top: -20px;
+  top: -23px;
 }
 
 .user-comment {
