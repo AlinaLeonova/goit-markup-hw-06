@@ -872,6 +872,7 @@ address {
   border-radius: 4px;
   padding: 12px 42px;
   transition: color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* position: relative; */
 }
 
 .form-input:focus,
@@ -910,7 +911,7 @@ address {
   width: 15px;
   height: 13px;
   fill: #212121;
-  top: 50%;
+  top: 53%;
   left: 15px;
   pointer-events: none;
 }
