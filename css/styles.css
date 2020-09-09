@@ -838,6 +838,7 @@ address {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  border-radius: ;
 }
 
 .form-input {
@@ -899,16 +900,32 @@ address {
   margin-bottom: 4px;
 }
 
-.policy-link {
-  text-decoration: underline;
-  color: var(--accent-color);
-}
-
-.user-policy {
+.checkbox-label {
   margin-bottom: 30px;
+  display: flex;
+  align-items: center;
 }
 
-.user-policy::before {
+.checkbox:checked + .checkbox-label::before {
+  background-color: var(--accent-color);
+}
+
+.checkbox-label::before {
+  display: block;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: var(--primary-white-color);
+  border: 1px solid #212121;
+  /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2); */
+  border-radius: 4px;
+  background-image: url(../images/check.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 7px;
+}
+
+/* .user-policy::before {
   display: block;
   content: "";
   width: 16px;
@@ -916,4 +933,9 @@ address {
   background-image: url(../images/check.svg);
   background-position: center;
   border-color: #212121;
+} */
+
+.policy-link {
+  text-decoration: underline;
+  color: var(--accent-color);
 }
